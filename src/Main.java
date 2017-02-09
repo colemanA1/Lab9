@@ -24,7 +24,7 @@ public static ArrayList<Car> getUserInfo(int numCars) {
     public static void main(String[] args) {
         System.out.println("WELCOME TO THE GRAND CIRCUS MOTORS ADMIN CONSOLE");
         System.out.println("How many cars do you want to enter?: ");
-        int numCars = scan.nextInt();
+        int numCars = Validator.getInt(scan, "Enter number of cars: ");
         scan.nextLine();
 
         ArrayList<Car> carList = getUserInfo(numCars);
